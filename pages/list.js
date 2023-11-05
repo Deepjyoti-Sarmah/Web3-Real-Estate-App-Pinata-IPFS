@@ -1,4 +1,12 @@
+import { document } from "postcss";
+
 export default function list() {
+
+  async function listProperty() {
+    let getTitle = document.getElementById("title").value.toString();
+    
+  }
+
   return (
     <div>
         <div className="container mx-auto sm:px-4" style={{fontFamily:'SF Pro Display'}}>
