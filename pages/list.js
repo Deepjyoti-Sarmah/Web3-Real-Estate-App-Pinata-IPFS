@@ -1,10 +1,16 @@
 import { document } from "postcss";
 import { sendJSONToIPFS } from "@/components/pinata";
+import { useState } from "react";
 
 export default function list() {
+  
+  async function updatePic(e){
+    const file = e.target.file[0];
+    const 
+  }
 
   async function listProperty() {
-    let picture = picCid;
+    // let picture = picCid;
     let gettitle = document.getElementById("title").value.toString()
     let getprice = document.getElementById("price").value.toString()
     let getyear = document.getElementById("year").value.toString()
@@ -26,7 +32,9 @@ export default function list() {
       !getfloors || !getbaths || !getrooms || !getgarage || !sellername || !selleremail || !sellerphone || !getaddress ) return
 
     const receive = await sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo,
-            getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, picture, getaddress);
+            getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, getaddress);
+
+    console.log(receive);
 
     
   }
@@ -307,7 +315,7 @@ export default function list() {
                   className="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-gray-600 text-white hover:bg-gray-700 flex justify-end"
                   type="file"
                   name="Asset"
-                  // onChange={updatePic}
+                  onChange={updatePic}
                 />
               </form>
               <div className="flex flex-wrap  g-6">
