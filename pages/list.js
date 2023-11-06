@@ -4,6 +4,7 @@ export default function list() {
 
   async function listProperty() {
     let getTitle = document.getElementById("title").value.toString();
+    console.log(getTitle);
     
   }
 
@@ -358,7 +359,7 @@ export default function list() {
                   fontWeight: "lighter",
                   fontSize: "20px",
                 }}
-                // onClick={listProperty}
+                onClick={listProperty}
               >
                 List Property
               </button>

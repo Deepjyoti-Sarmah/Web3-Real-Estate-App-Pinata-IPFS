@@ -9,4 +9,6 @@ import {
     ipfsgateway,
 } from './config';
 
+export async function sendJSONToIPFS() {
 
+}
