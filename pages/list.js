@@ -1,10 +1,33 @@
 import { document } from "postcss";
+import { sendJSONToIPFS } from "@/components/pinata";
 
 export default function list() {
 
   async function listProperty() {
-    let getTitle = document.getElementById("title").value.toString();
-    console.log(getTitle);
+    let picture = picCid;
+    let gettitle = document.getElementById("title").value.toString()
+    let getprice = document.getElementById("price").value.toString()
+    let getyear = document.getElementById("year").value.toString()
+    let getcity = document.getElementById("city").value.toString()
+    let getcountry = document.getElementById("country").value.toString()
+    let getzip = document.getElementById("zip").value.toString()
+    let gethoa = document.getElementById("hoa").value.toString()
+    let getinfo = document.getElementById("info").value.toString()
+    let getfloors = document.getElementById("floor").value.toString()
+    let getaddress = document.getElementById("address").value.toString()
+    let getbaths = document.getElementById("bath").value.toString()
+    let getrooms = document.getElementById("room").value.toString()
+    let getgarage = document.getElementById("garage").value.toString()
+    let sellername = document.getElementById("sellername").value.toString()
+    let selleremail = document.getElementById("selleremail").value.toString()
+    let sellerphone = document.getElementById("sellerphone").value.toString() 
+    
+     if( !gettitle || !getprice || !getyear || !getcity || !getcountry || !getzip || !gethoa || !getinfo || 
+      !getfloors || !getbaths || !getrooms || !getgarage || !sellername || !selleremail || !sellerphone || !getaddress ) return
+
+    const receive = await sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo,
+            getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, picture, getaddress);
+
     
   }
 
