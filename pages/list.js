@@ -1,17 +1,26 @@
 import { document } from "postcss";
 import { sendFileToIPFS, sendJSONToIPFS } from "@/components/pinata";
 import { useState } from "react";
+import { gatewayjwt, ipfsGateway } from "@/components/config";
 
 export default function list() {
+
+  const [picCid, getPicCid] = useState(""); 
+  const [picture, getPicture] = useState("pinatalogo.png");
+
   
   async function updatePic(e){
     const file = e.target.files[0];
     const getCID = await sendFileToIPFS(file);
-    console.log(getCID);
+    getPicCid(getCID);
+    const ipfsPath = "https://" + ipfsGateway + ".mypinata.cloud/ipfs/" + getCID + "?pinataGatewayToken=" + gatewayjwt;
+    getPicture(ipfsPath);
+
+    // console.log(getCID);
   }
 
   async function listProperty() {
-    // let picture = picCid;
+    let picture = picCid;
     let gettitle = document.getElementById("title").value.toString()
     let getprice = document.getElementById("price").value.toString()
     let getyear = document.getElementById("year").value.toString()
@@ -30,10 +39,11 @@ export default function list() {
     let sellerphone = document.getElementById("sellerphone").value.toString() 
     
      if( !gettitle || !getprice || !getyear || !getcity || !getcountry || !getzip || !gethoa || !getinfo || 
-      !getfloors || !getbaths || !getrooms || !getgarage || !sellername || !selleremail || !sellerphone || !getaddress ) return
+      !getfloors || !getbaths || !getrooms || !getgarage || !sellername || !selleremail || !sellerphone || !getaddress || picture) return
 
     const receive = await sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo,
-            getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, getaddress);
+            getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, getaddress || picture);
+
 
     console.log(receive);
 
@@ -376,7 +386,7 @@ export default function list() {
               <div className="flex flex-wrap  ">
                       <img
                         className="bd-placeholder-img"
-                        // src={picture}
+                        src={picture}
                         width="100%"
                         height="100%"
                         aria-hidden="true"
