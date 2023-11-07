@@ -1,12 +1,13 @@
 import { document } from "postcss";
-import { sendJSONToIPFS } from "@/components/pinata";
+import { sendFileToIPFS, sendJSONToIPFS } from "@/components/pinata";
 import { useState } from "react";
 
 export default function list() {
   
   async function updatePic(e){
-    const file = e.target.file[0];
-    const 
+    const file = e.target.files[0];
+    const getCID = await sendFileToIPFS(file);
+    console.log(getCID);
   }
 
   async function listProperty() {

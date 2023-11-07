@@ -19,7 +19,24 @@ export async function getDate() {
 }
 
 export async function sendFileToIPFS(file) {
-
+  const formData = new FormData();
+  const url = "https://api.pinata.cloud/pinning/pinFileToIPFS";
+  formData.append("file", file);
+  const opts = JSON.stringify({
+    cidVersion: 0,
+  });
+  formData.append("pinataOptions", opts);
+  const options = {
+    maxBodyLength: "Infinity",
+    headers: {
+      'Content-Type': `multipart/form-data; boundary=${formData._boundary}`,
+      pinata_api_key: pinatakey,
+      pinata_secret_api_key: pinatasecret,
+      Accept: 'text/plain',
+    }
+  }
+  const sendPic = await axios.post(url, formData, options);
+  return sendPic.data.IpfsHash;
 }
 
 export async function sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo, 
