@@ -40,7 +40,7 @@ export async function sendFileToIPFS(file) {
 }
 
 export async function sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo, 
-    getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, getaddress) {
+    getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, getaddress, picture) {
   
   const fetchTime = await getDate();
   const listDate = fetchTime.dateValue;
@@ -72,7 +72,7 @@ export async function sendJSONToIPFS(gettitle, getprice, getyear, getcity, getco
           "Email": selleremail,
           "Phone": sellerphone,
           "Listed": listDate,
-          // "Picture" : "https://" + ipfsgateway + ".mypinata.cloud/ipfs/" + picture + '?pinataGatewayToken='
+          "Picture" : "https://" + ipfsgateway + ".mypinata.cloud/ipfs/" + picture + '?pinataGatewayToken='
       }
     }
   });
