@@ -15,9 +15,10 @@
 //#################################################################################################
 //
 
-export const apikey = "ac5edbf278e8d5673c05";
-export const apiSecret = "10217f6efcc1a26f70ecf9a71f7dc5440b9a24d2a3a6ca35821a8d7f7aae38b2";
-export const gatewayjwt = "yLGVt1hwQEXdyaSYihgyuVln1isvcpGzNRJ2GUiTXoAkl3Fn2lJ2M69Wz4lndU_I";
+
+export const pinatakey = "ac5edbf278e8d5673c05";
+export const pinatasecret = "10217f6efcc1a26f70ecf9a71f7dc5440b9a24d2a3a6ca35821a8d7f7aae38b2";
+export const pinatajwt = "yLGVt1hwQEXdyaSYihgyuVln1isvcpGzNRJ2GUiTXoAkl3Fn2lJ2M69Wz4lndU_I";
 export const ipfsGateway = "sapphire-suspicious-urial-393";
 
 export const readHeader = {
@@ -26,15 +27,15 @@ export const readHeader = {
 
 export const getHeader = {
   headers: {
-    pinata_api_key: apikey,
-    pinata_secret_api_key: apiSecret,
+    pinata_api_key: pinatakey,
+    pinata_secret_api_key: pinatasecret,
   }
 }
 
 export const sendJsonHeader = {
   headers: {
     "Content-Type": "application/json",
-    pinata_api_key: apikey,
-    pinata_secret_api_key: apiSecret,
+    pinata_api_key: pinatakey,
+    pinata_secret_api_key: pinatasecret,
   }
 }

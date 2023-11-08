@@ -38,7 +38,7 @@ export default function list() {
     let selleremail = document.getElementById("selleremail").value.toString()
     let sellerphone = document.getElementById("sellerphone").value.toString() 
     
-     if( !gettitle || !getprice || !getyear || !getcity || !getcountry || !getzip || !gethoa || !getinfo || 
+    if( !gettitle || !getprice || !getyear || !getcity || !getcountry || !getzip || !gethoa || !getinfo || 
       !getfloors || !getbaths || !getrooms || !getgarage || !sellername || !selleremail || !sellerphone || !getaddress || !picture) return
 
     const receive = await sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo,

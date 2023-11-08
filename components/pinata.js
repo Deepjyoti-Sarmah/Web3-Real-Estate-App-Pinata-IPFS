@@ -39,9 +39,31 @@ export async function sendFileToIPFS(file) {
   return sendPic.data.IpfsHash;
 }
 
-export async function gettingFileFromIPFS() {
+export async function getFileFromIPFS() {
   const queryFilter = "metadata=[name]=listed";
+  const url = "https://api.pinata.cloud/data/pinList?" + queryFilter;
+  const fetchFile = await axios.get(url, getHeader );
+  const response =  fetchFile.data.rows;
+  const output = response.map((value) => {
+    let getCid = value.ipfs_pin_hash;
+    return getCid;
+  }) ;
+  return output;
 }
+
+export async function readFileFromIPFS() {
+  const output = await getFileFromIPFS();
+  const listArray = [];
+  let i =0 ;
+  for (i; i < output.length; i++) {
+    const value = output[i];
+    const ipfsPath = "https://" + ipfsgateway + ".mypinata.cloud/ipfs/" + value + '?pinataGatewayToken=' + pinatajwt;
+    const info = await axios.get(ipfsPath, readHeader);
+    listArray.push(info.data.propertyInfo);
+  }
+  return listArray;
+}
+
 
 export async function sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo, 
     getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, getaddress, picture) {
