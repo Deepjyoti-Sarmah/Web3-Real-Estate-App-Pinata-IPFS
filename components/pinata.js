@@ -39,6 +39,10 @@ export async function sendFileToIPFS(file) {
   return sendPic.data.IpfsHash;
 }
 
+export async function gettingFileFromIPFS() {
+  const queryFilter = "metadata=[name]=listed";
+}
+
 export async function sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo, 
     getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, getaddress, picture) {
   
