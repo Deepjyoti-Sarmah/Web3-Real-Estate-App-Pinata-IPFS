@@ -105,6 +105,7 @@ export async function sendJSONToIPFS(gettitle, getprice, getyear, getcity, getco
   const sendFile = await axios.post(url, data, sendJsonHeader);
   const hash = `ipfs://${resFile.data.IpfsHash}`;
   // console.log(hash);
-  return hash
+  // return hash
+  return "complete";
   
 }

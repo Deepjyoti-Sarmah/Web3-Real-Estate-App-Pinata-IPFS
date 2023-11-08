@@ -43,11 +43,15 @@ export default function list() {
 
     const receive = await sendJSONToIPFS(gettitle, getprice, getyear, getcity, getcountry, getzip, gethoa, getinfo,
             getfloors, getbaths, getrooms, getgarage, sellername, selleremail, sellerphone, getaddress || picture);
+    // console.log(receive);
 
-
-    console.log(receive);
-
-    
+    if (receive === "complete") {
+      let confirmation = "listed Successfully";
+      document.getElementById("displayresult").innerHTML = confirmation;
+    } else {
+      let confirmation = "Info not completed";
+      document.getElementById("displayresult").innerHTML = confirmation;
+    }  
   }
 
   return (
