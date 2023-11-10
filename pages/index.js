@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div>
-      {listings.map((list, i) => {
+        {listings.map((list, i) => (
             <div key={i}>
               <div className="container px-4 py-5">
                 <h2 key={i} className="pb-2 border-bottom fw-bold">{list.Title}</h2>
@@ -139,7 +139,7 @@ export default function Home() {
               </div>
               <div className="b-example-divider"></div>
             </div>
-      })}
+        ))}
     </div> 
 
   );

@@ -55,7 +55,7 @@ export default function list() {
   }
 
   return (
-    <div>
+    <div> 
         <div className="container mx-auto sm:px-4" style={{fontFamily:'SF Pro Display'}}>
           <div className="flex flex-wrap  g-6">
             <div className="md:w-1/5 lg:w-1/5 pr-4 pl-4">
@@ -413,7 +413,8 @@ export default function list() {
               </div>
             </div>
           </div>
-        </div> 
+    </div> 
 
+       
   );
 }
