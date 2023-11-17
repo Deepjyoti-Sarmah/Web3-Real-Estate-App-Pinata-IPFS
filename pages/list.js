@@ -63,25 +63,25 @@ export default function list() {
 
           <div class="col-span-12">
             <label for="example9" class="mb-1 block text-sm font-medium text-gray-400">Title</label>
-            <input type="text" id="title" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="Enter Title" />
+            <input type="text" id="title" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="Enter Title" />
           </div>
 
           <div class="col-span-4">
             <label for="example10" class="mb-1 block text-sm font-medium text-gray-400">Asking Price</label>
-            <input type="text" id="price" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="$" />
+            <input type="text" id="price" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="$" />
           </div>
           <div class="col-span-4">
             <label for="example11" class="mb-1 block text-sm font-medium text-gray-400">Year Built</label>
-            <input type="text" id="year" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="#" />
+            <input type="text" id="year" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="#" />
           </div>
           <div class="col-span-4">
             <label for="example12" class="mb-1 block text-sm font-medium text-gray-400">HOA</label>
-            <input type="text" id="hoa" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="$" />
+            <input type="text" id="hoa" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="$" />
           </div>
 
           <div class="col-span-12">
             <label for="example9" class="mb-1 block text-sm font-medium text-gray-400">Address</label>
-            <input type="text" id="address" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="Enter Address" />
+            <input type="text" id="address" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="Enter Address" />
           </div>
 
 
@@ -90,24 +90,24 @@ export default function list() {
               <div class="mt-2">
                 <textarea id="info" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
               </div>
-            {/* <input type="text" id="example9" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="1864 Main Street" /> */}
+            {/* <input type="text" id="example9" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="1864 Main Street" /> */}
           </div>
 
           <div class="col-span-3">
             <label for="example10" class="mb-1 block text-sm font-medium text-gray-400">Floors</label>
-            <input type="text" id="floor" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="0" />
+            <input type="text" id="floor" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="0" />
           </div>
           <div class="col-span-3">
             <label for="example11" class="mb-1 block text-sm font-medium text-gray-400">Rooms</label>
-            <input type="text" id="room" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="0" />
+            <input type="text" id="room" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="0" />
           </div>
           <div class="col-span-3">
             <label for="example12" class="mb-1 block text-sm font-medium text-gray-400">Baths</label>
-            <input type="text" id="bath" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="0" />
+            <input type="text" id="bath" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="0" />
           </div>
           <div class="col-span-3">
             <label for="example10" class="mb-1 block text-sm font-medium text-gray-400">Garage</label>
-            <input type="text" id="garage" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="0" />
+            <input type="text" id="garage" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="0" />
           </div>
           
           <div class="col-span-full ">
@@ -131,17 +131,17 @@ export default function list() {
           
           <div class="col-span-6">
             <label for="example9" class="mb-1 block text-sm font-medium text-gray-400">Seller Info</label>
-            <input type="text" id="sellername" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="Name" />
+            <input type="text" id="sellername" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="Name" />
           </div>
 
           <div class="col-span-6">
             <label for="example9" class="mb-1 block text-sm font-medium text-gray-400">Email</label>
-            <input type="text" id="selleremail" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="Email" />
+            <input type="text" id="selleremail" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="Email" />
           </div>
           
           <div class="col-span-6">
             <label for="example9" class="mb-1 block text-sm font-medium text-gray-400">Phone</label>
-            <input type="text" id="sellerphone" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500" placeholder="Phone number" />
+            <input type="text" id="sellerphone" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-400 focus:ring focus:ring-primary-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 text-gray-500" placeholder="Phone number" />
           </div>
           
 
