@@ -150,47 +150,54 @@ export default function Home() {
         <div className='m-auto p-3'>
           <h2 className='text-4xl font-bold p-4 m-4'>Title</h2>
         </div>
-        <div placeholder='image section' className='px-6 m-4'> 
+        <div className='flex flex-row'>
           <div>
-            <img placeholder='room image'/> Image
+            <div placeholder='image section' className='p-6 m-4'> 
+              <div>
+                <img placeholder='room image'/> Image
+              </div>
+            
+              <div className='m-2 p-2'>
+                <ul className='flex flex-row my-2'>
+                  <li className='p-2'>Icon</li>
+                  <li className='p-2'>Place</li>
+                  <li className='p-2'>Country</li>
+                </ul>
+              </div>
+            </div>
+        
+            <div placeholder='price section' className='m-4 p-6'>
+              <span placeholder='price' /> Price
+              <ul placeholder='Address' className='flex flex-row align-middle'>
+                <li className='p-2'>Seller</li>
+                <li className='p-2'>email</li>
+                <li className='p-2'>No</li>
+              </ul>
+              <span placeholder='listing date' /> Listing Date
+            </div>
           </div>
-          <div className='m-2 p-2'>
-            <ul className='flex flex-row my-2'>
-              <li className='p-2'>Icon</li>
-              <li className='p-2'>Place</li>
-              <li className='p-2'>Country</li>
-            </ul>
+        
+          <div placeholder='info section' className='m-4 p-6'>
+            <span className='flex-grow max-w-full flex-1 px-4 flex flex-col gap-2'>
+              Floor
+            </span>          
+            <span className='flex-grow max-w-full flex-1 px-4 flex flex-col gap-2'>
+              Beds
+            </span>          
+            <span className='flex-grow max-w-full flex-1 px-4 flex flex-col gap-2'>
+              Garage
+            </span>          
+            <span className='flex-grow max-w-full flex-1 px-4 flex flex-col gap-2'>
+              Built
+            </span>          
+            <span className='flex-grow max-w-full flex-1 px-4 flex flex-col gap-2'>
+              Bath
+            </span>          
+            <span className='flex-grow max-w-full flex-1 px-4 flex flex-col gap-2'>
+              HOA
+            </span>          
+            <p className='m-4 p-6'>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
           </div>
-        </div>
-        <div placeholder='price section' className='m-4 px-6'>
-          <span placeholder='price' /> Price
-          <ul placeholder='Address' className='flex flex-row align-middle'>
-            <li className='p-2'>Seller</li>
-            <li className='p-2'>email</li>
-            <li className='p-2'>No</li>
-          </ul>
-          <span placeholder='listing date'/> Listing Date
-        </div>
-        <div placeholder='info section'>
-          <span>
-            Floor
-          </span>          
-          <span>
-            Beds
-          </span>          
-          <span>
-            Garage
-          </span>          
-          <span>
-            Built
-          </span>          
-          <span>
-            Bath
-          </span>          
-          <span>
-            HOA
-          </span>          
-          <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
         </div>
       </div>
     </>
