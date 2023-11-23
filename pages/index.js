@@ -23,61 +23,61 @@ export default function Home() {
         {/* {listings.map((list, i) => ( */}
             <div> 
               <div>
-                <h2>Title</h2>
-                <div>
+                <h2 className='m-4 p-4 text-4xl'>Title</h2>
+                <div className="flex flex-wrap  row-cols-1 row-cols-md-2 md:items-center g-5 py-5">
                   <div>
                     <div>
                       <div>
-                        <div>
+                        <div className='flex flex-col p-4'>
                           {/* <img src={Picture + pinatajwt} /> */}
-                          <ul>
+                          <ul className='flex flex-row align-middle items-center m-4 p-4'>
                             <li >
                             <img src="map-solid.svg" alt="twbs" width="30" height="30" className=""/>
                             </li>
-                            <li className="">
+                            <li className="m-4 p-4">
                               <h6>Address</h6>
                             </li>
-                            <li className="">
+                            <li className="m-4 p-4">
                               <h6>City</h6>
                             </li>
-                            <li className="">
+                            <li className="m-4 p-4">
                               <h6>City</h6>
                             </li>
-                            <li className="">
+                            <li className="m-4 p-4">
                               <h6> Country</h6>
                             </li>
-                            <li className="">
+                            <li className="m-4 p-4">
                               <h6>Zip</h6>
                             </li>
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <div className="">
+                    <div className="flex flex-col m-4 p-4">
                       <a className="" aria-current="true">
                         <img src="dollar-solid.svg" alt="twbs" width="32" height="32" className=""/>
-                        <div className="">
+                        <div className="m-4 p-4">
                           <div>
                             <h5 className="">Price</h5>
                           </div>
                         </div>
                       </a>
                       <a className="" aria-current="true">
-                        <div className="">
+                        <div className=" flex flex-row items-center p-4 m-4">
                           <div>
-                            <h6 className="">Seller: Name<img src="person-solid.svg" alt="twbs" width="20" height="20" className=""/></h6>
+                            <h6 className="m-2 p-2">Seller: Name<img src="person-solid.svg" alt="twbs" width="20" height="20" className=""/></h6>
                           </div>
                           <div>
-                            <h6 className="">Email<img src="at-solid.svg" alt="twbs" width="20" height="20" className="" /></h6>
+                            <h6 className="m-2 p-2">Email<img src="at-solid.svg" alt="twbs" width="20" height="20" className="" /></h6>
                           </div>
                           <div>
-                            <h6 className="">Phone<img src="phone-solid.svg" alt="twbs" width="20" height="20" className="" /></h6>
+                            <h6 className="m-2 p-2">Phone<img src="phone-solid.svg" alt="twbs" width="20" height="20" className="" /></h6>
                           </div>
                         </div>
                         </a>
                         <a className="" aria-current="true">
                         <img src="calendar-solid.svg" alt="twbs" width="32" height="32" className=""/>
-                          <div className="flex gap-2 w-full justify-between">
+                          <div className="">
                             <div>
                               <h5 className="">Listed since: Listed</h5>
                             </div>
@@ -85,45 +85,46 @@ export default function Home() {
                         </a>
                     </div>
                   </div>
+
                   <div className="">
-                    <div className="">
+                    <div className=" flex flex-row items-center align-middle">
             
-                    <div className="">
+                    <div className="m-4 p-4">
                       <div className="">
                       <img src='house-solid.svg' width="32" height="32" />
                         <h4 className="">Floors Floors</h4>
                         </div>
                       </div>
             
-                      <div className="">
+                      <div className="m-4 p-4">
                       <div className="">
                       <img src='build-solid.svg' width="32" height="32" />
                         <h4 className="fw-semibold">Built Year</h4>
                         </div>
                       </div>
             
-                      <div className="">
+                      <div className="m-4 p-4">
                         <div className="">
                         <img src='bed-solid.svg' width="32" height="32" />
                         <h4 className="fw-semibold">Beds Rooms</h4>
                         </div>
                       </div>
             
-                      <div className="">
+                      <div className="m-4 p-4">
                       <div className="">
                       <img src='bath-solid.svg' width="32" height="32" />
                         <h4 className="fw-semibold">Baths Baths</h4>
                         </div>
                       </div>
             
-                      <div className="">
+                      <div className="m-4 p-4">
                       <div className="">
                       <img src='garage-solid.svg' width="32" height="32" />
                         <h4 className="fw-semibold">Garage Garage</h4>
                         </div>
                       </div>
             
-                      <div className="">
+                      <div className="m-4 p-4">
                       <div className="">
                       <img src='dollar-solid.svg' width="32" height="32" />
                         <h4 className="fw-semibold">HOA Hoa</h4>
@@ -131,8 +132,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="">
-                    <p>Info
-                    </p>
+                    <p className='p-4 m-4'>Info</p>
                     </div>
                   </div>
                 </div> 
